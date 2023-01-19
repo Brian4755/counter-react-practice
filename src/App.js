@@ -6,10 +6,16 @@ function App() {
 
   function increment() {
     setCount(prevCount => prevCount - 1)
+    colorChange()
   }
 
   function decrement() {
     setCount(prevCount => prevCount + 1)
+    colorChange()
+  }
+
+  function colorChange() {
+    document.body.style.color = 'blue'
   }
 
   return (
